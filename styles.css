@@ -105,14 +105,14 @@ h2::after {
 
 .about-grid {
   display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 3rem;
+  grid-template-columns: 200px 1fr;
+  gap: 4.5rem;
   align-items: start;
 }
 
 .about-photo img {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--border);
@@ -120,8 +120,8 @@ h2::after {
 
 .photo-placeholder {
   display: none;
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: var(--accent-light);
   color: var(--accent);
@@ -164,7 +164,7 @@ h1 {
 /* ── Research ─────────────────────────────────────────────── */
 .research-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
 
@@ -283,7 +283,8 @@ footer {
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 600px) {
   .about-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-  .about-photo img, .photo-placeholder { width: 120px; height: 120px; }
+  .about-photo img, .photo-placeholder { width: 140px; height: 140px; }
+  .research-grid { grid-template-columns: 1fr; }
   h1 { font-size: 1.6rem; }
   .nav-links { gap: 1.2rem; }
 }
